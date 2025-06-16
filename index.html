@@ -11,6 +11,23 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+<script>
+    let menuVisible = false;
+    function mostrarOcultarMenu() {
+        if (menuVisible) {
+            document.getElementById("nav").classList = "";
+            menuVisible = false;
+        } else {
+            document.getElementById("nav").classList = "responsive";
+            menuVisible = true;
+        }
+    }
+
+    function seleccionar() {
+        document.getElementById("nav").classList = "";
+        menuVisible = false;
+    }
+</script>
 
 <body>
     <!-- MENU ENCABEZADO -->
@@ -60,12 +77,14 @@
                     desarrollar habilidades en programación, sistemas y ciberseguridad.
 
                     Ahora busco seguir aprendiendo y crecer como desarrollador. <br><br>Lenguajes de programacion: Java
-                    , C# , Python , Dart , SQL , JavaScript.<br><br>IDES: Android Studio, Visual Studio, Eclipse, NetBeans,
+                    , C# , Python , Dart , SQL , JavaScript.<br><br>IDES: Android Studio, Visual Studio, Eclipse,
+                    NetBeans,
                     Unity
-                    <br><br>Conocimiento en Docker, VirtualBox/VMware, Active Directory , Linux/Kali Linux, XML, MongoDB, Firebase , Wordpress,
+                    <br><br>Conocimiento en Docker, VirtualBox/VMware, Active Directory , Linux/Kali Linux, XML,
+                    MongoDB, Firebase , Wordpress,
                     Plastic, Git
-                <br><br>Frameworks: Flutter, FastAPI , Django, Pyshark, SpringBoot </span>
-                </p>
+                    <br><br>Frameworks: Flutter, FastAPI , Django, Pyshark, SpringBoot </span>
+            </p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -136,84 +155,51 @@
         </div>
     </section>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
+    <!-- SECCION APP -->
+    <section class="apps" id="apps">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2>Aplicaciones</h2>
             <div class="fila">
-                <!-- Technical Skills -->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="barra-skill">
-                            <div class="progreso java" style="width: 75%;">
-                                <span>75%</span>
-                            </div>
-                        </div>
+                <div class="app">
+                    <div class="imagen-app">
+                        <img src="img/pokemon.png" alt="App 1">
                     </div>
-                    <div class="skill">
-                        <span>Kotlin</span>
-                        <div class="barra-skill">
-                            <div class="progreso kotlin" style="width: 60%;">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML && CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso html-css" style="width: 60%;">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="barra-skill">
-                            <div class="progreso python" style="width: 70%;">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso comunicacion" style="width: 90%;">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso trabajo-equipo" style="width: 85%;">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso dedicacion" style="width: 85%;">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Ganas de aprender</span>
-                        <div class="barra-skill">
-                            <div class="progreso ganas-aprender" style="width: 100%;">
-                                <span>100%</span>
-                            </div>
-                        </div>
+                    <div class="info-app">
+                        <h3>Digipymon</h3>
+                        <p>Primer proyecto personal creado con mi compañero Kike.<br>Ha sido creado en Python con la
+                            libreria Tkinter, todo mediante menus.<br>Juego inspirado en Pokemon.</p>
+                        <a href="#" class="boton-descarga" target="_blank">Descargar</a>
                     </div>
                 </div>
             </div>
+            <div class="fila">
+
+                <div class="app">
+                    <div class="imagen-app">
+                        <img src="img/motordeal.png" alt="App 1">
+                    </div>
+                    <div class="info-app">
+                        <h3>MotorDealGranada (MDG)</h3>
+                        <p>Aplicacion del TFG, creada con mi compañero Kike.<br>Red social combinada con la venta de
+                            vehiculos de segunda mano.<br>Creada con Flutter y Firebase</p>
+                        <a href="#" class="boton-descarga" target="_blank">Descargar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+
+                <div class="app">
+                    <div class="imagen-app">
+                        <img src="img/kali.png" alt="App 1">
+                    </div>
+                    <div class="info-app">
+                        <h3>Ciberseguridad (EN desarrollo)</h3>
+                        <p>Aplicacion para el master de ciberseguridad</p>
+                        <a href="#" class="boton-descarga" target="_blank">Descargar</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- SECCION CURRICULUM -->
